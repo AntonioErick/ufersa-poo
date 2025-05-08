@@ -23,7 +23,7 @@ public class Program {
 		horas = n%1440/60;
 		minutos = n%60;
 		
-		System.out.println(n+" minutos é igual a "+dias+" dias, "+horas+" e "+17+" minutos.");
+		System.out.println(n+" minutos é igual a "+dias+" dias, "+horas+" e "+minutos+" minutos.");
 		
 		sc.close();
 	}
