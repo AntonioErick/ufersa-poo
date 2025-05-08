@@ -1,5 +1,3 @@
-package Introducao;
-
 import java.text.DecimalFormat;
 
 public class Contadores {
