@@ -3,6 +3,7 @@ package Application;
 import Natal.Data;
 import Conversor.Unidades;
 import Igualdade.ehIgual;
+import Tupla.Tupla;
 
 public class Program {
     public static void main(String[] args) {
@@ -38,6 +39,14 @@ public class Program {
         Integer d2 = 5;
 
         System.out.println("d1 == d2 ? "+ (ehIgual.Igual(d1, d2) ? "Sim" : "Nao"));
+
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println("Demonstraçao de classes genericas: ");
+
+        Tupla<String, Double> t1 = new Tupla<String,Double>("Ufersa", 1.2345);
+        Tupla<String, Integer> t2 = new Tupla<String,Integer>("Erick", 5);
+        System.out.println(t1);
+        System.out.println(t2);
 
         System.out.println("-----------------------------------------------------------------");
     }
