@@ -4,7 +4,7 @@ public class Tupla <F, S>{
     private F pri;
     private S seg;
 
-    public Tupla(F pri, S srg){
+    public Tupla(F pri, S seg){
         this.pri = pri;
         this.seg = seg;
     }
