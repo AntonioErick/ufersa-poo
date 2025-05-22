@@ -2,6 +2,7 @@ package Application;
 
 import Natal.Data;
 import Conversor.Unidades;
+import Igualdade.ehIgual;
 
 public class Program {
     public static void main(String[] args) {
@@ -24,5 +25,20 @@ public class Program {
         n2023.mostraData();
         n2024.mostraData();
         n2025.mostraData();
+
+        System.out.println("-----------------------------------------------------------------");
+        System.out.println("Demonstraçao de metodos genericos: ");
+
+        Double c1 = 5.0;
+        Double c2 = 5.0;
+
+        System.out.println("c1 == c2 ? "+ (ehIgual.Igual(c1, c2) ? "Sim" : "Nao"));
+
+        Integer d1 = 4;
+        Integer d2 = 5;
+
+        System.out.println("d1 == d2 ? "+ (ehIgual.Igual(d1, d2) ? "Sim" : "Nao"));
+
+        System.out.println("-----------------------------------------------------------------");
     }
 }
