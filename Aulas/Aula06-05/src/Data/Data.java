@@ -11,7 +11,7 @@ public class Data {
 		this.ano = ano;
 	}
 	
-	public boolean dataValida() {
+	private boolean dataValida() {
 		return (dia>0 && dia<=30 && mes>0 && mes<=12 && ano >=0);
 	}
 	
@@ -19,6 +19,11 @@ public class Data {
 		dia = d;
 		mes = m;
 		ano = a;
+		if(!dataValida()){
+			dia = 1;
+			mes = 1;
+			ano = 2000;
+		}
 	}
 	
 	public void mostraData() {
