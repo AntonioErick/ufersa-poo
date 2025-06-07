@@ -12,6 +12,16 @@ public class Extrato {
         transacoes = new ArrayList<>();
     }
 
+    public void transacao(float valor){
+        if (saldoFinal+valor>=0) {
+            saldoFinal += valor;
+            transacoes.add(valor);
+        }
+        else{
+            System.out.println("Saldo insuficiente.");
+        }
+    }
+
     public String toString(){
         String res = "--------------------\n";
         for(Float f : transacoes){
